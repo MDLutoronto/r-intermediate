@@ -18,9 +18,9 @@ parent: Intermediate R
 
 ```
 # Example 1: Is a storm in the dataset?
-stormname <- "Katrina"    # Try "Katrina" then "Ben"
+mystorm <- "Katrina"    # Try "Katrina" then "Ben"
 
-if (stormname %in% storms$name) {
+if (mystorm %in% storms$name) {
   print("This storm is in the dataset.")
 } else {
   print("This storm is not in the dataset!")

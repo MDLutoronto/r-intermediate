@@ -48,12 +48,27 @@ topstorms %>% group_by(name)
 
 ```
 # SUMMARIZE: one summary row per group
-topstorms %>% group_by(name) %>% summarize(minpressure = min(pressure), meanlat = mean(lat), meanlong = mean(long))
-
-topstorms %>% group_by(name, year) %>% summarize(count = n(), minpressure = min(pressure), meanlat = mean(lat), meanlong = mean(long))
-
-topstorms <- topstorms %>% group_by(name, year) %>% summarize(count = n(), minpressure = min(pressure), meanlat = mean(lat), meanlong = mean(long))
-
+topstorms %>% 
+  group_by(name) %>% 
+  summarize(minpressure = min(pressure), 
+            meanlat = mean(lat), 
+            meanlong = mean(long))
+```
+```
+topstorms %>% 
+  group_by(name, year) %>% 
+  summarize(count = n(), 
+            minpressure = min(pressure), 
+            meanlat = mean(lat), 
+            meanlong = mean(long))
+```
+```
+topstorms <- topstorms %>% 
+  group_by(name, year) %>% 
+  summarize(count = n(), 
+            minpressure = min(pressure), 
+            meanlat = mean(lat), 
+            meanlong = mean(long))
 topstorms
 ```
 

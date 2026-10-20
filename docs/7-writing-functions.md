@@ -19,7 +19,7 @@ parent: Intermediate R
 ```
 # Example 1: No arguments
 helloworld <- function() {
-  print("Hello World")  
+  print("Hello World!")  
 }
 helloworld()
 ```
@@ -29,7 +29,7 @@ helloworld()
 ```
 # Example 2: One argument
 helloname <- function(name) {
-  print(glue("Hello {name}"))  
+  print(glue("Hello {name}!"))  
 }
 helloname("Kai")
 ```
